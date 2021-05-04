@@ -1,15 +1,2 @@
 
-<<<<<<< HEAD
-22:23:43 | console  Traceback (most recent call last):
-  File "C:\Users\xxl3m\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\bot.py", line 902, in invoke
-    await ctx.command.invoke(ctx)
-  File "C:\Users\xxl3m\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\core.py", line 856, in invoke
-    await self.prepare(ctx)
-  File "C:\Users\xxl3m\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\core.py", line 789, in prepare
-    self._prepare_cooldowns(ctx)
-  File "C:\Users\xxl3m\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\core.py", line 773, in _prepare_cooldowns
-    raise CommandOnCooldown(bucket, retry_after)
-discord.ext.commands.errors.CommandOnCooldown: You are on cooldown. Try again in 1.70s
-=======
-23:04:36 | console  discord.ext.commands.errors.CommandNotFound: Command "queue" is not found
->>>>>>> 01d257fb698a10142724effb4190c53a10851b10
+06:31:59 | console  discord.ext.commands.errors.CommandNotFound: Command "play" is not found

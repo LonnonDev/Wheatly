@@ -143,6 +143,10 @@ class Useful(commands.Cog, name="Useful Commands"):
 		guild = self.bot.get_guild(812732678037700658)
 		print(guild.owner)
 
+	@commands.command(aliases=["gh"])
+	async def github(self, ctx, githubpage : str):
+		await ctx.send(f"https://github.com/LonnonDev/{githubpage}")
+
 # setup the Cog
 def setup(bot):
 	print("Useful Commands Loaded...")

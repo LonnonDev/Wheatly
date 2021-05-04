@@ -149,7 +149,6 @@ class Economy(commands.Cog, name="Economy Commands"):
 	def turnlistintostring(self, listobj):
 		finalstring = "["
 		for x in listobj:
-<<<<<<< HEAD
 			finalstring += f"{x} "
 		finalstring += "]"
 		return finalstring
@@ -166,13 +165,10 @@ class Economy(commands.Cog, name="Economy Commands"):
 			file.close()
 			return True
 
-
-=======
 			finalstring += f"{x}, "
 		finalstring += "]"
 		return finalstring
 
->>>>>>> 01d257fb698a10142724effb4190c53a10851b10
 	@commands.command()
 	async def reset(self, ctx):
 		person = None
@@ -218,7 +214,6 @@ class Economy(commands.Cog, name="Economy Commands"):
 	@commands.command()
 	async def buy(self, ctx, item: str):
 		item = self.removedemoncode(item)
-<<<<<<< HEAD
 		canbuy = self.decreaseitemquantity(item)
 		if canbuy == True:
 			personog, member, membername, person = self.getperson(ctx)
@@ -235,7 +230,6 @@ class Economy(commands.Cog, name="Economy Commands"):
 				await ctx.send("worked")
 		else:
 			await ctx.send("Not Enough Stock, wait for us to restock that item")
-=======
 		personog, member, membername, person = self.getperson(ctx)
 		pocket, bank = self.fetchbalance(person)
 		items = self.fetchitems(person)
@@ -249,7 +243,6 @@ class Economy(commands.Cog, name="Economy Commands"):
 			c.execute("UPDATE items SET items=? WHERE id=?", (items, person))
 			conn.commit()
 			await ctx.send("worked")
->>>>>>> 01d257fb698a10142724effb4190c53a10851b10
 
 	@commands.command(aliases=["shop"])
 	async def items(self, ctx):
